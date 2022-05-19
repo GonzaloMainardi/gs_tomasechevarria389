@@ -1,0 +1,864 @@
+@import "tipografia";
+@import "animaciones";
+@import "generales";
+
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section"
+    "footer";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        background-color: green;
+        color: white;
+        font-family: $font-titulo;
+        font-size: 25px;   
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar {
+        grid-area: header;
+        background-color: green;
+        color: white;
+        font-family: $font-menu;
+        font-size: 15px;   
+
+        & h3{
+            display: none;
+        }
+
+        & li a {
+            color: white;
+            text-align: center;
+            &:hover {
+                background-color: black;
+                color: white;
+                border-radius: 15px;
+            }
+        }
+
+        #navbarDropdown {
+            color: white;
+        }
+
+        .dropdown-item {
+            color: black;
+        }
+    }
+
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+
+    .sectionIndex {
+        background-image: url(../img/FotoPortada.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        grid-area: section;
+        text-align: center;
+        width: 100%;
+        .card {
+            border-radius: 20px;
+            width: 92vw;
+            margin: 15px auto;
+            & h3 {
+                font-family: $font-titulo;
+                font-size: 40px;
+                text-decoration: underline;
+            }
+            & p {
+                font-family: $font-body;
+                color: black;
+                font-size:15px;
+                text-align: center;
+            }
+            & img {
+                border-radius: 20px
+            }
+        }
+        & button {
+            @include btn-estilo;
+            margin-bottom: 15px;
+            background-color: green;
+            font-size: 25px;
+        }
+        .btn-ig {
+            @include btn-estilo;
+            background-color: map-get($map: $col-redes, $key: ig);
+        }
+        .btn-fb {
+            @include btn-estilo;
+            background-color: map-get($map: $col-redes, $key: fb);
+        }
+        .btn-gmail {
+            @include btn-estilo;
+            background-color: map-get($map: $col-redes, $key: gmail);
+
+        }
+
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #222222;
+        text-align: center;
+        & h4 {
+            margin-top: 5px;
+            font-family: $font-titulo;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+        & button {
+            @include btn-estilo;
+            background-color: green;
+            margin-bottom: 10px;
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+
+    /* PAGINA NOSOTROS */
+    
+    .sectionNosotros {
+        width: 100vw;
+        padding: 5px;
+
+        .fundacion {
+            background-color: #ffff1a;
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            margin: 20px auto;
+            padding: 15px;
+
+            & h2 {
+                font-family: $font-encabezado;
+                text-align: center;
+                justify-self: center;
+                align-self: center;
+                margin: 15px auto;
+                text-decoration: underline;
+            }
+
+            & p {
+                margin: 0;
+                align-self: center;
+                justify-self: center;
+                font-family: $font-body;
+                color: black;
+                padding: 15px 5px;
+                font-size: 15px;
+                text-align: center;
+            }
+
+            & img {
+                align-self: center;
+                justify-self: center;
+                width: 15rem;
+                border-radius: 10px;
+                border: black solid 2px;
+            }
+        }
+        .actividad {
+            background-color: #ff9900;
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            margin: 20px auto;
+            padding: 15px;
+
+            & h2 {
+                font-family: $font-encabezado;
+                text-align: center;
+                justify-self: center;
+                align-self: center;
+                margin-top: 25px auto;
+                text-decoration: underline;
+            }
+
+            & p {
+                font-family: $font-body;
+                color: black;
+                padding: 15px 5px;
+                font-size: 15px;
+                text-align: center;
+                align-self: center;
+                justify-self: center;
+
+            }
+
+            & img {
+                order: 3;
+                align-self: center;
+                justify-self: center;
+                width: 90vw;
+                height: 12rem;
+                border-radius: 25px;
+                border: black solid 2px;
+            }
+        }
+
+        .historia {
+            background-size: cover;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin-bottom: 5px;
+    
+            & h3 {
+                width: 100%;
+                background-color: green;
+                font-family: $font-buttons;
+                color: white;
+                font-size: 23px;
+                text-align: center;
+            }
+    
+            & iframe {
+                border-radius: 15px;
+                width: 98vw;
+            }
+        }
+    }
+
+        
+    /* PAGINA CONTACTO */
+     
+    .formularioContacto {
+        width: 98vw;
+        background-color: #222222;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 15px;
+        margin: 5px 2px;
+        padding: 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 80px 380px 150px 200px 1fr;
+
+        & h3 {
+            font-family: $font-titulo;
+            width: 95vw;
+            text-align: center;
+            font-size: 35px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            align-self: center;
+        }
+
+        .formulario {
+            width: 93vw;
+            grid-column: 1/2;
+            grid-row: 2/5;
+            justify-items: center;
+            align-items: center;
+    
+            & input, textarea, select {
+                border-radius: 5px;
+                text-align: center;
+                display: block;
+                width: 93vw;
+                padding: 20px;
+                margin-top: 15px;
+            }
+            & textarea {
+                min-width: 93vw;
+                max-width: 2fr;
+                min-height: 100px;
+                max-height: 100px;
+            }
+            .formularioButtons{
+                display: flex;
+                flex-direction: column;
+                padding: 15px;
+                justify-content: space-evenly;
+                & button {
+                    @include btn-estilo;
+                    background-color: green;
+                    font-size: 20px;
+                    margin: 5px auto;
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+        
+        .informacionContacto {
+            width: 93vw;
+            list-style: none;
+            grid-column: 1/2;
+            grid-row: 5/6;
+            text-align: center;
+            justify-content: space-around;
+
+            & h2 {
+                font-family: $font-titulo;
+                font-size: 50px;
+                width: 93vw;
+                background-color: #222222;
+                padding: 5px;
+            }
+            & ul li {
+                width: 93vw;
+                display: block;
+                padding: 10px;
+                background-color: gray;
+                }
+            & ul {
+                padding: 0;
+            }
+
+            .informacionContactoRedes {
+                width: 93vw;
+                background-color: gray;
+                & button {
+                    color: white;
+                    padding: 5px 10px;
+                    margin-bottom: 5px;
+                }
+                .btn-ig {
+                    @include btn-estilo;
+                    background-color: map-get($map: $col-redes, $key: ig);
+                }
+                .btn-fb {
+                    @include btn-estilo;
+                    background-color: map-get($map: $col-redes, $key: fb);
+                }
+            } 
+
+            & iframe {
+                margin-left: 0;
+                width: 90vw;
+                margin-top: 20px;
+            }
+        }
+
+    }  
+
+    /* PAGINA RAMAS */
+
+    .ramas {
+        width: 100vw;
+        padding: 15px 5px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 3fr;
+        .ramasInsignias {
+            margin: 70px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            & img {
+                width: 8rem;
+                height: 8rem;
+                padding: 10px 5px;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .ramasInformacion {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            & p {
+                border-radius: 10px;
+                font-family: $font-body;
+                font-size: 15px;
+                text-align: center;
+                width: 95%;
+                height: 250px;
+                padding-top: 100px;
+            }
+            .ramasInformacionLobato {
+                background-color: map-get($map: $col-ramas, $key: lobato);
+                margin: 20px auto;
+            }
+            .ramasInformacionScout {
+                background-color: map-get($map: $col-ramas, $key: unidad);
+                margin: 10px;
+            
+            }
+            .ramasInformacionCaminante{
+                background-color: map-get($map: $col-ramas, $key: caminante);
+                margin: 10px;
+            
+            }
+            .ramasInformacionRover {
+                background-color: map-get($map: $col-ramas, $key: rover);
+                margin: 10px;
+            }        
+        }
+    
+    }
+
+    /* PAGINA CAMPAMENTOS */
+    
+    .sectionCampamentos {
+        .row {
+            padding: 0;
+            margin: 0;
+        }
+        .card {
+            border-radius: 15px;
+            border: solid green 3px;
+            margin: 10px auto;
+            text-align: center;
+            font-family: $font-body;
+            font-size: 20px;
+            & img {
+                padding: 3px;
+                border-radius: 15px;
+            }
+            .btn-campamentos {
+                @include btn-estilo;
+                background-color: green;
+                text-decoration: none;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        display: none;
+    }
+    
+    .navbar {
+        grid-area: header;
+        background-color: green;
+        color: white;
+        font-family: $font-menu;
+        font-size: 30px;  
+
+        & h3{
+            color: white;
+            font-family: $font-titulo;
+            font-size: 30px;
+            text-align: center;
+            padding-left: 10px;
+        }
+
+        & li a {
+            font-size: 25px;
+            color: white;
+            &:hover {
+                background-color: black;
+                color: white;
+                border-radius: 15px;
+            }
+        }
+
+        #navbarDropdown {
+            color: white;
+        }
+
+        .dropdown-item {
+            text-align: center;
+            color: black;
+            
+        }
+    }
+
+    .sectionIndex {
+        grid-area: section;
+        background-image: url(../img/FotoPortada.jpg);
+        background-size: cover;
+        text-align: center;
+        .card {
+            width: 25rem;
+            border-radius: 20px;
+            margin: 15px auto;
+            & h3 {
+                font-family: $font-titulo;
+                font-size: 40px;
+                text-decoration: underline;
+            }
+            & p {
+                font-family: $font-body;
+                color: black;
+                font-size:20px;
+                text-align: center;
+            }
+            & img {
+                border-radius: 20px
+            }
+            & button {
+                @include btn-estilo;
+                background-color: green;
+                margin-bottom: 15px;
+                font-size: 25px;
+            }
+            .btn-ig {
+                @include btn-estilo;
+                background-color: map-get($map: $col-redes, $key: ig);
+            }
+            .btn-fb {
+                @include btn-estilo;
+                background-color: map-get($map: $col-redes, $key: fb);
+            }
+            .btn-gmail {
+                @include btn-estilo;
+                background-color: map-get($map: $col-redes, $key: gmail);
+
+            }
+
+        }
+
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #222222;
+        text-align: center;
+        & h4 {
+            margin-top: 8px;
+            font-family: $font-titulo;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        & button {
+            @include btn-estilo;
+            display: inline-block;
+            margin-bottom: 20px;
+                &:hover {
+                background-color: black;
+            }
+        }
+    }
+
+    /* PAGINA NOSOTROS */
+
+    .sectionNosotros {
+        padding: 10px;
+
+        .fundacion {
+            background-color: #ffff1a;
+            display: grid;
+            grid-template-columns: 18rem 2fr;
+            grid-template-rows: 30px 1fr;
+            border-radius: 25px;
+            margin: 20px 30px;
+            padding: 15px;
+
+            & h2 {
+                font-family: $font-encabezado;
+                grid-column: 1/3;
+                grid-row: 1/2;
+                text-align: center;
+                justify-self: center;
+                align-self: center;
+                margin-top: 25px;
+                text-decoration: underline;
+            }
+
+            & p {
+                align-self: center;
+                justify-self: center;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                font-family: $font-body;
+                color: black;
+                padding: 25px;
+                font-size: 25px;
+                text-align: justify;
+            }
+
+            & img {
+                align-self: center;
+                justify-self: center;
+                grid-column: 1/2;
+                grid-row: 2/3;
+                width: 15rem;
+                border-radius: 10px;
+                border: black solid 2px;
+            }
+        }
+        .actividad {
+            background-color: #ff9900;
+            display: grid;
+            grid-template-columns: 2fr 30rem;
+            grid-template-rows: 20px 1fr;
+            border-radius: 25px;
+            margin: 20px 30px;
+            padding: 10px;
+
+            & h2 {
+                font-family: $font-encabezado;
+                grid-column: 1/3;
+                grid-row: 1/2;
+                text-align: center;
+                justify-self: center;
+                align-self: center;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                text-decoration: underline;
+            }
+
+            & p {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                font-family: $font-body;
+                color: black;
+                padding: 25px;
+                font-size: 25px;
+                text-align: justify;
+                align-self: center;
+                justify-self: center;
+
+            }
+
+            & img {
+                align-self: center;
+                justify-self: center;
+                grid-column: 2/3;
+                grid-row: 2/3;
+                width: 30rem;
+                height: 20rem;
+                border-radius: 10px;
+                border: black solid 2px;
+            }
+        }
+
+    }
+
+    .historia {
+        background-image: url(../img/FondoLidPresente2.png);
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-bottom: 5px;
+
+        & h3 {
+            width: 100%;
+            background-color: green;
+            font-family: $font-buttons;
+            color: white;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        & iframe {
+            border-radius: 15px;
+            width: 55rem;
+        }
+    }
+        
+    /* PAGINA CONTACTO */
+     
+    .formularioContacto {
+        background-color: #222222;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        font-size: 25px;
+        margin: 10px 10px;
+        padding: 10px 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 50px 2fr 1fr 1fr;
+        column-gap: 15px;
+
+        & h3 {
+            text-align: center;
+            font-size: 40px;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .formulario {
+            grid-column: 1/2;
+            grid-row: 2/5;
+    
+            & input, textarea, select {
+                border-radius: 8px;
+                text-align: center;
+                display: block;
+                width: 100%;
+                padding: 20px;
+                margin-top: 15px;
+            }
+            & textarea {
+                min-width: 100%;
+                max-width: 2fr;
+                min-height: 100px;
+                max-height: 100px;
+            }
+            .formularioButtons{
+                display: flex;
+                padding: 45px;
+                justify-content: space-evenly;
+                & button {
+                    @include btn-estilo;
+                    background-color: green;
+                    font-size: 30px;
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+        
+        .informacionContacto {
+            list-style: none;
+            grid-column: 2/3;
+            grid-row: 1/5;
+            text-align: center;
+            justify-content: space-around;
+
+            & h2 {
+                background-color: #222222;
+                padding: 10px;
+            }
+            & ul li {
+                display: block;
+                padding: 10px;
+                background-color: gray;
+                }
+            & ul {
+                padding: 0;
+            }
+
+            .informacionContactoRedes {
+                background-color: gray;
+                & button {
+                    color: white;
+                    padding: 5px 10px;
+                    margin-bottom: 5px;
+                }
+                .btn-ig {
+                    @include btn-estilo;
+                    background-color: map-get($map: $col-redes, $key: ig);
+                }
+                .btn-fb {
+                    @include btn-estilo;
+                    background-color: map-get($map: $col-redes, $key: fb);
+                }
+            } 
+
+            & iframe {
+                margin-top: 20px;
+            }
+        }
+
+    }  
+   
+
+    /* PAGINA RAMAS */
+
+    .ramas {
+        padding: 30px 35px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 3fr;
+        & a {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            & img {
+                width: 250px;
+                height: 250px;
+                padding: 20px;
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+
+        .ramasInformacion {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            & p {
+                border-radius: 15px;
+                font-family: $font-body;
+                font-size: 32px;
+                text-align: center;
+                width: 100%;
+                height: 230px;
+                padding-top: 85px;
+                &:hover {
+                    opacity: 0.8;
+                    font-size: 50px;
+                }
+            }
+            .ramasInformacionLobato {
+                background-color: map-get($map: $col-ramas, $key: lobato);
+                margin: 10px;
+            }
+            .ramasInformacionScout {
+                background-color: map-get($map: $col-ramas, $key: unidad);
+                margin: 10px;
+            
+            }
+            .ramasInformacionCaminante{
+                background-color: map-get($map: $col-ramas, $key: caminante);
+                margin: 10px;
+            
+            }
+            .ramasInformacionRover {
+                background-color: map-get($map: $col-ramas, $key: rover);
+                margin: 10px;
+            }        
+        }
+    }
+
+    /* PAGINA CAMPAMENTOS */
+
+    .sectionCampamentos {
+        .card {
+            border-radius: 15px;
+            border: solid green 3px;
+            margin: 10px auto;
+            text-align: center;
+            font-family: $font-body;
+            font-size: 20px;
+            .card-body{
+                padding: 10px 8px;
+            }
+            & img {
+                padding: 3px;
+                border-radius: 15px;
+            }
+            .btn-campamentos {
+                @include btn-estilo;
+                background-color: green;
+                text-decoration: none;
+            }
+        }
+    }
+}

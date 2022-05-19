@@ -1,0 +1,30 @@
+$col-redes: (
+    ig:#C13584,
+    fb: #3b5998,
+    tw: #00acee,
+    gmail: #db4a39,
+);
+
+$col-ramas: (
+    lobato: yellow,
+    unidad:#34a259,
+    caminante: #0073e6,
+    rover: red,
+);
+
+@each $nombre, $valor in $col-redes {
+    .btn-#{$nombre} {
+        background-color: $valor;
+    }
+}
+
+@mixin btn-estilo {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: $font-buttons;  
+    text-transform: uppercase;  
+}
+
+

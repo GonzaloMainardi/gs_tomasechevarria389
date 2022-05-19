@@ -1,0 +1,1109 @@
+.animate__animated.animate__heartBeat {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__shakeY {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__tada {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__wobble {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__bounceInLeft {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.animate__animated.animate__bounceInRight {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.btn-ig {
+  background-color: #C13584;
+}
+
+.btn-fb {
+  background-color: #3b5998;
+}
+
+.btn-tw {
+  background-color: #00acee;
+}
+
+.btn-gmail {
+  background-color: #db4a39;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+      grid-template-areas: "header" "main" "section" "footer";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    background-color: green;
+    color: white;
+    font-family: "Estonia", cursive, bold;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  .navbar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    background-color: green;
+    color: white;
+    font-family: "Mogra", cursive;
+    font-size: 15px;
+  }
+  .navbar h3 {
+    display: none;
+  }
+  .navbar li a {
+    color: white;
+    text-align: center;
+  }
+  .navbar li a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+  }
+  .navbar #navbarDropdown {
+    color: white;
+  }
+  .navbar .dropdown-item {
+    color: black;
+  }
+  #carouselExampleIndicators {
+    display: none;
+  }
+  .sectionIndex {
+    background-image: url(../img/FotoPortada.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: section;
+    text-align: center;
+    width: 100%;
+  }
+  .sectionIndex .card {
+    border-radius: 20px;
+    width: 92vw;
+    margin: 15px auto;
+  }
+  .sectionIndex .card h3 {
+    font-family: "Estonia", cursive, bold;
+    font-size: 40px;
+    text-decoration: underline;
+  }
+  .sectionIndex .card p {
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+  }
+  .sectionIndex .card img {
+    border-radius: 20px;
+  }
+  .sectionIndex button {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background-color: green;
+    font-size: 25px;
+  }
+  .sectionIndex .btn-ig {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #C13584;
+  }
+  .sectionIndex .btn-fb {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #3b5998;
+  }
+  .sectionIndex .btn-gmail {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #db4a39;
+  }
+  footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: footer;
+    background-color: #222222;
+    text-align: center;
+  }
+  footer h4 {
+    margin-top: 5px;
+    font-family: "Estonia", cursive, bold;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 25px;
+    margin-bottom: 8px;
+  }
+  footer button {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: green;
+    margin-bottom: 10px;
+  }
+  footer button:hover {
+    background-color: black;
+  }
+  /* PAGINA NOSOTROS */
+  .sectionNosotros {
+    width: 100vw;
+    padding: 5px;
+  }
+  .sectionNosotros .fundacion {
+    background-color: #ffff1a;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .sectionNosotros .fundacion h2 {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 15px auto;
+    text-decoration: underline;
+  }
+  .sectionNosotros .fundacion p {
+    margin: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    padding: 15px 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .sectionNosotros .fundacion img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 15rem;
+    border-radius: 10px;
+    border: black solid 2px;
+  }
+  .sectionNosotros .actividad {
+    background-color: #ff9900;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .sectionNosotros .actividad h2 {
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 25px auto;
+    text-decoration: underline;
+  }
+  .sectionNosotros .actividad p {
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    padding: 15px 5px;
+    font-size: 15px;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .sectionNosotros .actividad img {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    width: 90vw;
+    height: 12rem;
+    border-radius: 25px;
+    border: black solid 2px;
+  }
+  .sectionNosotros .historia {
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px;
+  }
+  .sectionNosotros .historia h3 {
+    width: 100%;
+    background-color: green;
+    font-family: "Luckiest Guy", cursive;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+  }
+  .sectionNosotros .historia iframe {
+    border-radius: 15px;
+    width: 98vw;
+  }
+  /* PAGINA CONTACTO */
+  .formularioContacto {
+    width: 98vw;
+    background-color: #222222;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 15px;
+    margin: 5px 2px;
+    padding: 10px 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 80px 380px 150px 200px 1fr;
+        grid-template-rows: 80px 380px 150px 200px 1fr;
+  }
+  .formularioContacto h3 {
+    font-family: "Estonia", cursive, bold;
+    width: 95vw;
+    text-align: center;
+    font-size: 35px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .formularioContacto .formulario {
+    width: 93vw;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .formularioContacto .formulario input, .formularioContacto .formulario textarea, .formularioContacto .formulario select {
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 93vw;
+    padding: 20px;
+    margin-top: 15px;
+  }
+  .formularioContacto .formulario textarea {
+    min-width: 93vw;
+    max-width: 2fr;
+    min-height: 100px;
+    max-height: 100px;
+  }
+  .formularioContacto .formulario .formularioButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .formularioContacto .formulario .formularioButtons button {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: green;
+    font-size: 20px;
+    margin: 5px auto;
+  }
+  .formularioContacto .formulario .formularioButtons button:hover {
+    background-color: black;
+  }
+  .formularioContacto .informacionContacto {
+    width: 93vw;
+    list-style: none;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .formularioContacto .informacionContacto h2 {
+    font-family: "Estonia", cursive, bold;
+    font-size: 50px;
+    width: 93vw;
+    background-color: #222222;
+    padding: 5px;
+  }
+  .formularioContacto .informacionContacto ul li {
+    width: 93vw;
+    display: block;
+    padding: 10px;
+    background-color: gray;
+  }
+  .formularioContacto .informacionContacto ul {
+    padding: 0;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes {
+    width: 93vw;
+    background-color: gray;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes button {
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes .btn-ig {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #C13584;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes .btn-fb {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #3b5998;
+  }
+  .formularioContacto .informacionContacto iframe {
+    margin-left: 0;
+    width: 90vw;
+    margin-top: 20px;
+  }
+  /* PAGINA RAMAS */
+  .ramas {
+    width: 100vw;
+    padding: 15px 5px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -ms-grid-rows: 3fr;
+        grid-template-rows: 3fr;
+  }
+  .ramas .ramasInsignias {
+    margin: 70px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ramas .ramasInsignias img {
+    width: 8rem;
+    height: 8rem;
+    padding: 10px 5px;
+  }
+  .ramas .ramasInsignias img:hover {
+    opacity: 0.6;
+  }
+  .ramas .ramasInformacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .ramas .ramasInformacion p {
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    width: 95%;
+    height: 250px;
+    padding-top: 100px;
+  }
+  .ramas .ramasInformacion .ramasInformacionLobato {
+    background-color: yellow;
+    margin: 20px auto;
+  }
+  .ramas .ramasInformacion .ramasInformacionScout {
+    background-color: #34a259;
+    margin: 10px;
+  }
+  .ramas .ramasInformacion .ramasInformacionCaminante {
+    background-color: #0073e6;
+    margin: 10px;
+  }
+  .ramas .ramasInformacion .ramasInformacionRover {
+    background-color: red;
+    margin: 10px;
+  }
+  /* PAGINA CAMPAMENTOS */
+  .sectionCampamentos .row {
+    padding: 0;
+    margin: 0;
+  }
+  .sectionCampamentos .card {
+    border-radius: 15px;
+    border: solid green 3px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+  }
+  .sectionCampamentos .card img {
+    padding: 3px;
+    border-radius: 15px;
+  }
+  .sectionCampamentos .card .btn-campamentos {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: green;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    display: none;
+  }
+  .navbar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    background-color: green;
+    color: white;
+    font-family: "Mogra", cursive;
+    font-size: 30px;
+  }
+  .navbar h3 {
+    color: white;
+    font-family: "Estonia", cursive, bold;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .navbar li a {
+    font-size: 25px;
+    color: white;
+  }
+  .navbar li a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+  }
+  .navbar #navbarDropdown {
+    color: white;
+  }
+  .navbar .dropdown-item {
+    text-align: center;
+    color: black;
+  }
+  .sectionIndex {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: section;
+    background-image: url(../img/FotoPortada.jpg);
+    background-size: cover;
+    text-align: center;
+  }
+  .sectionIndex .card {
+    width: 25rem;
+    border-radius: 20px;
+    margin: 15px auto;
+  }
+  .sectionIndex .card h3 {
+    font-family: "Estonia", cursive, bold;
+    font-size: 40px;
+    text-decoration: underline;
+  }
+  .sectionIndex .card p {
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+  }
+  .sectionIndex .card img {
+    border-radius: 20px;
+  }
+  .sectionIndex .card button {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: green;
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .sectionIndex .card .btn-ig {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #C13584;
+  }
+  .sectionIndex .card .btn-fb {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #3b5998;
+  }
+  .sectionIndex .card .btn-gmail {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #db4a39;
+  }
+  footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: footer;
+    background-color: #222222;
+    text-align: center;
+  }
+  footer h4 {
+    margin-top: 8px;
+    font-family: "Estonia", cursive, bold;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  footer button {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  footer button:hover {
+    background-color: black;
+  }
+  /* PAGINA NOSOTROS */
+  .sectionNosotros {
+    padding: 10px;
+  }
+  .sectionNosotros .fundacion {
+    background-color: #ffff1a;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 18rem 2fr;
+        grid-template-columns: 18rem 2fr;
+    -ms-grid-rows: 30px 1fr;
+        grid-template-rows: 30px 1fr;
+    border-radius: 25px;
+    margin: 20px 30px;
+    padding: 15px;
+  }
+  .sectionNosotros .fundacion h2 {
+    font-family: "Permanent Marker", cursive;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 25px;
+    text-decoration: underline;
+  }
+  .sectionNosotros .fundacion p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    padding: 25px;
+    font-size: 25px;
+    text-align: justify;
+  }
+  .sectionNosotros .fundacion img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 15rem;
+    border-radius: 10px;
+    border: black solid 2px;
+  }
+  .sectionNosotros .actividad {
+    background-color: #ff9900;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 30rem;
+        grid-template-columns: 2fr 30rem;
+    -ms-grid-rows: 20px 1fr;
+        grid-template-rows: 20px 1fr;
+    border-radius: 25px;
+    margin: 20px 30px;
+    padding: 10px;
+  }
+  .sectionNosotros .actividad h2 {
+    font-family: "Permanent Marker", cursive;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    text-align: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+  }
+  .sectionNosotros .actividad p {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    padding: 25px;
+    font-size: 25px;
+    text-align: justify;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .sectionNosotros .actividad img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+    border: black solid 2px;
+  }
+  .historia {
+    background-image: url(../img/FondoLidPresente2.png);
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 5px;
+  }
+  .historia h3 {
+    width: 100%;
+    background-color: green;
+    font-family: "Luckiest Guy", cursive;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  .historia iframe {
+    border-radius: 15px;
+    width: 55rem;
+  }
+  /* PAGINA CONTACTO */
+  .formularioContacto {
+    background-color: #222222;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 25px;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: 50px 2fr 1fr 1fr;
+        grid-template-rows: 50px 2fr 1fr 1fr;
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .formularioContacto h3 {
+    text-align: center;
+    font-size: 40px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .formularioContacto .formulario {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+  }
+  .formularioContacto .formulario input, .formularioContacto .formulario textarea, .formularioContacto .formulario select {
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 15px;
+  }
+  .formularioContacto .formulario textarea {
+    min-width: 100%;
+    max-width: 2fr;
+    min-height: 100px;
+    max-height: 100px;
+  }
+  .formularioContacto .formulario .formularioButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .formularioContacto .formulario .formularioButtons button {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: green;
+    font-size: 30px;
+  }
+  .formularioContacto .formulario .formularioButtons button:hover {
+    background-color: black;
+  }
+  .formularioContacto .informacionContacto {
+    list-style: none;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .formularioContacto .informacionContacto h2 {
+    background-color: #222222;
+    padding: 10px;
+  }
+  .formularioContacto .informacionContacto ul li {
+    display: block;
+    padding: 10px;
+    background-color: gray;
+  }
+  .formularioContacto .informacionContacto ul {
+    padding: 0;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes {
+    background-color: gray;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes button {
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes .btn-ig {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #C13584;
+  }
+  .formularioContacto .informacionContacto .informacionContactoRedes .btn-fb {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: #3b5998;
+  }
+  .formularioContacto .informacionContacto iframe {
+    margin-top: 20px;
+  }
+  /* PAGINA RAMAS */
+  .ramas {
+    padding: 30px 35px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr;
+        grid-template-columns: 1fr 3fr;
+    -ms-grid-rows: 3fr;
+        grid-template-rows: 3fr;
+  }
+  .ramas a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ramas a img {
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+  }
+  .ramas a img:hover {
+    opacity: 0.6;
+  }
+  .ramas .ramasInformacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .ramas .ramasInformacion p {
+    border-radius: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    height: 230px;
+    padding-top: 85px;
+  }
+  .ramas .ramasInformacion p:hover {
+    opacity: 0.8;
+    font-size: 50px;
+  }
+  .ramas .ramasInformacion .ramasInformacionLobato {
+    background-color: yellow;
+    margin: 10px;
+  }
+  .ramas .ramasInformacion .ramasInformacionScout {
+    background-color: #34a259;
+    margin: 10px;
+  }
+  .ramas .ramasInformacion .ramasInformacionCaminante {
+    background-color: #0073e6;
+    margin: 10px;
+  }
+  .ramas .ramasInformacion .ramasInformacionRover {
+    background-color: red;
+    margin: 10px;
+  }
+  /* PAGINA CAMPAMENTOS */
+  .sectionCampamentos .card {
+    border-radius: 15px;
+    border: solid green 3px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+  }
+  .sectionCampamentos .card .card-body {
+    padding: 10px 8px;
+  }
+  .sectionCampamentos .card img {
+    padding: 3px;
+    border-radius: 15px;
+  }
+  .sectionCampamentos .card .btn-campamentos {
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-family: "Luckiest Guy", cursive;
+    text-transform: uppercase;
+    background-color: green;
+    text-decoration: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
